@@ -75,12 +75,14 @@
       border-radius: 12px;
       padding: 12px;
       box-sizing: border-box;
+      overflow: hidden;
     }
 
     .raw-wrapper img,
     .raw-wrapper object {
       width: 100%;
       display: block;
+      min-height: 400px;
     }
 
     .footer {
@@ -105,88 +107,87 @@
         Una exploración visual de mis hábitos de consumo en YouTube a partir de datos exportados desde Google Takeout.
       </p>
       <p>
-        El proyecto analiza cuándo consumo contenido, qué temas dominaron distintas etapas de mi vida digital
-        y cómo cambió mi experiencia de uso después de pasar a Premium.
+        El proyecto analiza cuándo consumo contenido, cómo evolucionó ese consumo a lo largo del tiempo,
+        qué temas dominaron distintas etapas de mi vida digital y qué cambió en mi experiencia de uso después de pasar a Premium.
       </p>
     </div>
 
-    <!-- ========================= -->
     <!-- GRÁFICO 1 - DATAWRAPPER -->
-    <!-- ========================= -->
+ 
     <div class="chart-block">
       <h2>¿En qué momentos de la semana se concentra mi consumo de YouTube?</h2>
       <p class="chart-note">
-        Cada celda representa la cantidad de reproducciones registradas según día de la semana y franja horaria.
+        Cada celda representa la cantidad de reproducciones registradas según el día de la semana y la franja horaria.
+        Esta visual permite identificar rutinas estables, picos de consumo y diferencias entre semana y fin de semana.
       </p>
 
       <div class="embed-wrapper">
-      <iframe title="Cuando Miro Youtube?" aria-label="Table" id="datawrapper-chart-lw41s" src="https://datawrapper.dwcdn.net/lw41s/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="404" data-external="1"></iframe><script type="text/javascript">window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}});</script>
+        <iframe title="Cuando Miro Youtube?" aria-label="Table" id="datawrapper-chart-lw41s" src="https://datawrapper.dwcdn.net/lw41s/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="404" data-external="1"></iframe>
+        <script type="text/javascript">
+          window.addEventListener("message", function(a) {
+            if (void 0 !== a.data["datawrapper-height"]) {
+              var e = document.querySelectorAll("iframe");
+              for (var t in a.data["datawrapper-height"]) {
+                for (var r, i = 0; r = e[i]; i++) {
+                  if (r.contentWindow === a.source) {
+                    var d = a.data["datawrapper-height"][t] + "px";
+                    r.style.height = d;
+                  }
+                }
+              }
+            }
+          });
+        </script>
       </div>
     </div>
 
-    <!-- ========================= -->
     <!-- GRÁFICO 2 - RAWGRAPHS -->
-    <!-- ========================= -->
+    
     <div class="chart-block">
-      <h2>¿Cómo se conectan mis horarios de consumo con los temas que más veo?</h2>
+      <h2>¿Qué tipos de contenido dominaron mi consumo antes y después de pasar a Premium?</h2>
       <p class="chart-note">
-        Este gráfico muestra la relación entre franjas horarias, categorías de contenido y etapa pre/post Premium.
+        El gráfico muestra cómo fue cambiando la composición de mi consumo mensual en YouTube.
+        La aparición, desaparición o crecimiento de ciertas categorías permite ver con más claridad el quiebre que introduce Premium.
       </p>
 
       <div class="raw-wrapper">
-      
         <object type="image/svg+xml" data="./assets/rawgraphs/raw_topics_stream.svg"></object>
-     
+      </div>
     </div>
-
-    <!-- ========================= -->
+>
     <!-- GRÁFICO 3 - FLOURISH -->
-    <!-- ========================= -->
+
     <div class="chart-block">
-      <h2>¿Qué tipos de contenido dominaron cada etapa de mi vida en YouTube?</h2>
+      <h2>¿Cómo evolucionó mi consumo de YouTube y mi exposición registrada a anuncios a lo largo del tiempo?</h2>
       <p class="chart-note">
-        Ranking animado de categorías para mostrar cómo fue cambiando mi consumo con el paso del tiempo.
+        Esta visual pone en relación la cantidad de videos vistos con los eventos explícitos de anuncios detectados en el historial.
+        Más que medir cada impresión publicitaria exacta, permite observar cómo cambia la experiencia registrada de consumo alrededor del inicio de Premium.
       </p>
 
       <div class="embed-wrapper">
-      <div class="flourish-embed flourish-chart" data-src="visualisation/28158058"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/28158058/thumbnail" width="100%" alt="visualization" /></noscript></div>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/28158058">
+          <script src="https://public.flourish.studio/resources/embed.js"></script>
+          <noscript>
+            <img src="https://public.flourish.studio/visualisation/28158058/thumbnail" width="100%" alt="visualization" />
+          </noscript>
+        </div>
       </div>
     </div>
 
-    <!-- ========================= -->
-    <!-- GRÁFICO 4 - POWER BI / TABLEAU -->
-    <!-- ========================= -->
+    <!-- GRÁFICO 4 - TABLEAU -->
+
     <div class="chart-block">
-      <h2>¿Qué cambió en mi experiencia de YouTube cuando pasé a Premium?</h2>
+      <h2>¿Qué cambió en mis hábitos de consumo cuando pasé a Premium?</h2>
       <p class="chart-note">
-        Comparación entre el período previo y posterior a Premium en términos de consumo, categorías y exposición a anuncios.
+        Este dashboard compara el período previo y posterior a Premium para mostrar cambios en volumen de consumo,
+        mezcla de categorías, horarios de uso y presencia de eventos asociados a publicidad.
       </p>
 
       <div class="embed-wrapper tall">
-        <!-- PEGAR ACÁ EL EMBED DE POWER BI O TABLEAU -->
+      <div class='tableauPlaceholder' id='viz1774036508748' style='position: relative'><noscript><a href='#'><img alt='Dashboard 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tp&#47;tp1-youtube&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='tp1-youtube&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;tp&#47;tp1-youtube&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1774036508748');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1227px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
       </div>
     </div>
 
-    <!-- ========================= -->
-    <!-- VISUAL EXTRA OPCIONAL -->
-    <!-- ========================= -->
-    <div class="chart-block">
-      <h2>¿Qué diferencia hay entre lo que busco y lo que termino viendo?</h2>
-      <p class="chart-note">
-        Espacio para una visual adicional cruzando intención de búsqueda y consumo real.
-      </p>
-
-      <div class="embed-wrapper">
-        <!-- PEGAR ACÁ UNA VISUAL EXTRA SI DESPUÉS QUERÉS -->
-      </div>
-    </div>
-
-    <div class="footer">
-      <p>
-        Trabajo práctico de Visualización de Datos Personales · Juan Ignacio Ripoll
-      </p>
-    </div>
-
-  </div>
+   
 </body>
 </html>
